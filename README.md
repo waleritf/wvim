@@ -1,12 +1,16 @@
 # Personal VIM configuration
 
-You can see user plugins at bundle directory.
+You can see used plugins at bundle directory.
 
-## dependencies
-git
-vim
+## Dependencies
+- git
+- vim
 
 ## Installation
 cd ~
-git clone this repo
+
+git clone git@github.com:wv0id/wvim.git
+
+mv wvim .vim
+
 ln -s ~/.vim/vimrc ~/.vimrc
