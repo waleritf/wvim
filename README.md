@@ -7,16 +7,23 @@ You can see used plugins at bundle directory.
 - vim
 
 ## Installation
-cd ~
+    cd ~
+    git clone git@github.com:wv0id/wvim.git
+    mv wvim .vim
+    ln -s ~/.vim/vimrc ~/.vimrc
+    cd ~/.vim
+    git submodule init
+    git submodule update
 
-git clone git@github.com:wv0id/wvim.git
+## Ignore .swp
 
-mv wvim .vim
+To ignore temporary vim files with .swp,
 
-ln -s ~/.vim/vimrc ~/.vimrc
+you need to add *.swp to your .gitignore_global
 
-cd ~/.vim
+If you have not global gitignore, you can create it:
 
-git submodule init
-
-git submodule update
+    cd ~
+    touch .gitignore_global
+    echo '*.swp' >> .gitignore_global
+    git config --global core.excludesfile ~/.gitignore_global

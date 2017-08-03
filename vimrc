@@ -7,6 +7,7 @@ filetype indent on
 
 let NERDTreeMapActivateNode='<right>'
 let NERDTreeShowHidden=1
+let NERDTreeIgnore = ['\.swp$']
 let g:gitgutter_sign_column_always=1
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
