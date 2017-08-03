@@ -37,6 +37,9 @@ autocmd BufWritePre * :%s/\s\+$//e
 nmap <leader>n :NERDTreeToggle<CR>
 nmap <leader>j :NERDTreeFind<CR>
 
+nnoremap <C-Up> :m-2<CR>
+nnoremap <C-Down> :m+<CR>
+
 let g:lightline = {
 	\ 'colorscheme': 'wombat',
 	\ 'active': {
