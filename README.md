@@ -8,7 +8,7 @@ You can see used plugins at bundle directory.
 
 ## Installation
     cd ~
-    git clone git@github.com:wv0id/wvim.git
+    git clone https://github.com/wv0id/wvim.git
     mv wvim .vim
     ln -s ~/.vim/vimrc ~/.vimrc
     cd ~/.vim
