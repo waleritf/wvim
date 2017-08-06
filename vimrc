@@ -30,10 +30,12 @@ set laststatus=2
 set noshowmode
 set encoding=utf8
 set showtabline=2
+set omnifunc=csscomplete#CompleteCSS
 
 noremap <Leader>r :CommandTFlush<CR>
 
 autocmd BufWritePre * :%s/\s\+$//e
+autocmd BufNewFile,BufRead *.scss	set ft=scss.css
 
 nmap <leader>n :NERDTreeToggle<CR>
 nmap <leader>j :NERDTreeFind<CR>
